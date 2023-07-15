@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  
+    <title>Content management Tool</title>
+</head>
+<body>
+    <div class="bg-container d-flex flex-column pt-5">
+        <h1 class="heading">Blog Creater</h1>
+        <div class="ml-5 text-center pl-5 mb-3">
+            <form class="form p-3 mb-3" id = "blogForm">
+              <div class="input-1">
+                <label class="label">Title:</label>
+                <input id = "inputTitle" type="text" class="input" placeholder="Enter Your Title"/>
+              </div>
+              <div class="input-2"> 
+               <label class="label">Content:</label>
+               <textarea id = "inputText"  class="input" placeholder="Enter Text"></textarea>
+              </div>
+              <div class="input-1">
+                <label class="label">Image:</label>
+                <input id = "inputImage" type="file" class="input"/>
+              </div>
+              <div class="input-1">
+                <label class="label">Title:</label>
+                <input id = "inputVideo" type="file" class="input" />
+              </div>
+               <button class = "button mb-5 mt-3">Sumbit</button>
+            </form>
+            <div class="preview-blog" id = "blogList">
+                <h1 class="heading">Blog Details</h1>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </div>
+    
+</body>
+</html>
